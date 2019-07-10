@@ -15,5 +15,6 @@ RUN apt-get install -y curl unzip make \
     && make install \
     && chmod 644 /usr/local/byond/man/man6/* \
     && apt-get purge -y --auto-remove curl unzip make \
+    && rm -rf /var/lib/apt/lists/* \
     && cd .. \
     && rm -rf byond byond.zip
