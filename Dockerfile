@@ -1,7 +1,7 @@
 FROM ubuntu:bionic
 
 ENV BYOND_MAJOR=512 \
-    BYOND_MINOR=1471
+    BYOND_MINOR=1472
 
 RUN dpkg --add-architecture i386 \
     && apt-get update \
